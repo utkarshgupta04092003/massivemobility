@@ -13,7 +13,7 @@ export const sideBarClasses = {
     sidebar: {
         fontSize: 40,
         backgroundColor: '#FFFAF4',
-        width: '25%',
+        width: '20vw',
         maxWidth: '320px',
         // padding: '10px',
         height: '100vh'

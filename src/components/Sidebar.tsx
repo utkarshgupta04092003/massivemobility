@@ -17,7 +17,7 @@ import {sidebarData} from '../data/data';
 import Image from 'next/image';
 
 export default function Sidebar({selected}: sidebarProps) {
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const icon = <SendIcon />
   const handleClick = () => {
     setOpen(!open);
