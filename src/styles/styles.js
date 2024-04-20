@@ -16,7 +16,8 @@ export const sideBarClasses = {
         width: '20vw',
         maxWidth: '320px',
         // padding: '10px',
-        height: '100vh'
+        height: '100vh',
+        position: 'fixed'
 
     },
     listItem: {

@@ -3,10 +3,12 @@
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 
-import Sidebar from '../components/Sidebar';
-import MainUserComponent from '../components/MainUserComponent'
+import Sidebar from '@/components/Sidebar';
+import MainUserComponent from '@/components/MainUserComponent'
 import PortfolioHeader from '@/components/PortfolioHeader';
+import Aside from '@/components/Aside';
 import { Divider } from '@mui/material';
+import MainContent from '@/components/MainContent';
 
 const Home: React.FC = () => {
 
@@ -15,20 +17,20 @@ const Home: React.FC = () => {
   return (
     <div className='flex'>
       <Sidebar selected={selected} />
-      <main>
+      <Box >
         <MainUserComponent />
-        <Box sx={{margin: '1rem'}}>
+        <Box sx={{ margin: '1rem' }}>
 
-        <PortfolioHeader/>
-        <Divider/>
-        <Box sx={{ border: '2px solid r d', display: 'flex' }}>
-          <h2>working</h2>
+          <PortfolioHeader />
+          <Divider sx={{ position: 'relative', left: '20rem', width: '75vw', top: '4rem', height: '100%' }} />
+          
+          <Box sx={{ display: 'flex', justifyContent: 'space-between', position: 'relative', left: '20rem', top: '5rem', width: '75vw' }}>
+            <MainContent />
+            <Aside />
+          </Box>
           <h1>Main Content</h1>
-
         </Box>
-        <h1>Main Content</h1>
-        </Box>
-      </main>
+      </Box>
     </div>
   );
 };

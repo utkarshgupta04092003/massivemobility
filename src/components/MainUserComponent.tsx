@@ -55,9 +55,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function MainUserComponent() {
     return (
-        <Box sx={{ flexGrow: 1, width: '80vw' }}>
+        <Box sx={{ flexGrow: 1, width: '80vw', position : 'fixed', left: '19rem', zIndex: '10' }}>
             <AppBar position="static" sx={{ backgroundColor: 'white' }}>
-                <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', boxShadow: 'none' }}>
 
                     <Search>
                         <SearchIconWrapper>
