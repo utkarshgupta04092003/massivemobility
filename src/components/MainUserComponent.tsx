@@ -69,18 +69,18 @@ export default function MainUserComponent() {
                         />
                     </Search>
 
-                    <div className='flex items-center'>
+                    <Box className='flex items-center'>
                         <Badge badgeContent={4} color="primary" sx={{ marginRight: '20px' }}>
                             <CircleNotificationsIcon sx={{ color: 'lightgrey', fontSize: '40px', position: 'relative', left: '10px', bottom: '2px' }} />
                         </Badge>
                         <Avatar alt="Cindy Baker" src="/user.svg" />
-                        <div className='flex-col mx-5'>
+                        <Box className='flex-col mx-5'>
                             <Typography sx={{ color: 'grey' }}>Shailesh Vickram</Typography>
                             <Typography sx={{ color: 'grey', fontSize: 'small' }}>Investor</Typography>
 
-                        </div>
+                        </Box>
                         <ArrowDropDownCircleIcon sx={{ color: 'grey', fontSize: '25px' }} />
-                    </div>
+                    </Box>
 
 
                 </Toolbar>
